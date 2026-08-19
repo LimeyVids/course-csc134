@@ -21,6 +21,9 @@ int main()
     cin  >> name; // input - reads the name into this variable
 
     cout << "This program is for: " << name << endl;
+    string Enter;
+    cout << "Press Enter to close program";
+    cin  >> Enter;
     return 0; // no errors
 
     // One more comment.
