@@ -8,6 +8,9 @@
 using namespace std;
 
 int main() {
+    cout << "Hello, CSC134!";
+    cout << endl;               // endl is end Lineeee, seems like it can also be a space in a line
+    
     return 0; // no errors
     
 }
