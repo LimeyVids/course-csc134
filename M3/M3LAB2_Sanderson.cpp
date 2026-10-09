@@ -29,6 +29,10 @@ int main(){
     cout << "Number grade: ";
     cin >> number_grade;
 
+    if (number_grade >= 90){
+        
+    }
+
 
 
 
