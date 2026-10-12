@@ -1,0 +1,55 @@
+// CSC 134
+// M4LAB1
+// SandersonL
+// 10/12/26
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string token = "✔️"; // use any charater you want
+   // const int WIDTH = 5;
+    //const int HEIGHT = 5;
+    // het width and height
+    int width = 0;
+    int height = 0;
+    while (width <= 0 || height <= 0){
+    cout << "Enter width: ";
+    cin >> width;
+    cout << "Enter height: ";
+    cin >> height;
+        // optional
+        if (width <= 0){
+            cout << "Width cannot be less than or equal to 0" << endl;
+        
+        }
+        if (height <= 0){
+            cout << "Height cannot be less than or equal to 0" << endl;
+        }
+    }
+    
+    
+    // First part: Printing on row
+    for (int i = 0; i < width; i++) {
+        cout << token << " "; // adding a space
+    }
+    cout << endl; // end the row
+    cout << "Part 2 " << endl;
+    // next part: printing one column
+    for (int j = 0; j < height; j++) {
+        cout << token << endl;
+    }
+    cout << "Here is your rectangle " << width << " by " << height << endl;
+    // full rectangle:print # of rows/
+    // each row is width long.
+    for (int j = 0; j < height; j++) {
+        // draw one ful row
+        for (int i = 0; i < width; i++) {
+            cout << token << " "; // adding a space
+        } // repeat width times
+        cout << endl; // end the row
+    } // repeat height times
+
+
+    return 0;
+}
